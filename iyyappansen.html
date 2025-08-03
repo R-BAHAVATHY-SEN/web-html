@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iyyappansen</title>
+    <link rel="icon" href="img.1.jpeg"> <!-- Optional: your site icon -->
+
+    <style>
+        body {
+            background-image: url("WhatsApp\ Image\ 2025-08-03\ at\ 7.40.42\ AM.jpeg"); /* 🔁 Replace with your background image filename */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .clickable-letter {
+            font-size: 30px;
+            color: yellow;
+            font-weight: bold;            /* Makes the text bold */
+            cursor: pointer;
+            margin-right: 20px;
+            transition: all 0.3s ease;    /* Optional: smooth hover effect */
+        }
+
+        .clickable-letter:hover {
+            color: orange;
+            text-shadow: 0 0 5px white;
+            transform: scale(1.05);
+        }
+        
+        p {
+            font-weight: bold;               
+            background-color: rgba(255, 255, 255, 0.1); 
+            padding: 20px 20px;
+            margin: 15px auto;
+            width: 80%;
+            border-radius: 8px;
+            color: rgb(6, 101, 81);
+            text-shadow: 0 0 5px rgb(143, 120, 255), 0 0 10px rgb(255, 0, 128); /* 🔥 Text glow */
+            box-shadow: 0 0 20px 5px rgba(255, 120, 208, 0.7); /* Box glow */
+            font-size: large;
+
+        }
+
+
+
+
+        video {
+            display: none;
+            margin-top: 15px;
+            width: 480px;
+        }
+
+        hr {
+            border: none;
+            height: 4px;
+            background: linear-gradient(to right, white, orangered, white);
+            border-radius: 2px;
+            width: 80%;
+            box-shadow: 0 0 10px orangered;
+        }
+
+
+        img {
+            width: 700px;
+            border-radius: 8px;
+        }
+
+        center {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>FAMILY</h1>
+        
+        <p>A family is a group of people, often related by blood, marriage, who live together and provide support and love for each other. Families play a crucial role in personal development, offering emotional support, a sense of belonging, and a foundation for a happy life. They are the first source of identity and the biggest support system throughout life</p>
+        <p>
+            "The family is one of nature's masterpieces." |
+            "Other things may change us, but we start and end with the family." |
+            "Family is not an important thing, it's everything." |
+             "The memories we make with our family is everything." 
+        </p>
+    </center>
+
+    <hr>
+   <center>
+        <h1>FATHER AND MOTHER I LOVE YOU</h1>
+        <img src="sa 1.jpeg" alt="FATHER AND MOTHER I LOVE YOU"><br>
+        <span class="clickable-letter" onclick="playVideo('videoA')">FROM CHILDHOOD</span>
+        <video id="videoA" controls>
+            <source src="im v. 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>
+            The work of a mother is hard, too often unheralded work. Please know that it is worth it then, now, and forever.My mother was the most beautiful woman I ever saw.
+        </p>
+    </center>
+
+
+
+    <hr>
+
+    <center>
+        <h2>MEMORIES</h2>
+        <img src="sa wa 2.jpeg" alt="Memories"><br>
+        <span class="clickable-letter" onclick="playVideo('videoB')">UNFORGETABLE</span>
+        <video id="videoB" controls>
+            <source src="k. v2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>
+            Sisters are the perfect blend of love, laughter, and support, and A sister is like yourself in a different movie, a movie that stars you in a different life. 
+        </p>
+        
+    </center>
+
+   <hr>
+
+    <center>
+        <h1>Endless smile with care</h1>
+        <img src="we all 3.jpeg" alt="Smile With Care"><br>
+        <span class="clickable-letter" onclick="playVideo('videoC')">WORLD BIGGEST GIFT TO ME</span>
+        <video id="videoC" controls>
+            <source src="m . v3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>
+            No matter how old we get, you'll always be my little brother.
+            Even though you're taller than me now you'll always be my little brother.
+            
+
+        </p>
+    </center>
+
+    <script>
+        function playVideo(videoId) {
+            const videos = document.querySelectorAll('video');
+            videos.forEach(v => {
+                v.pause();
+                v.style.display = 'none';
+            });
+
+            const selectedVideo = document.getElementById(videoId);
+            selectedVideo.style.display = 'block';
+            selectedVideo.play();
+        }
+    </script>
+
+    <center>
+
+    <span class="clickable-letter" onclick="showImage('imgA')">A</span>
+    <img id="imgA" class="hidden-image" src="WhatsApp Image 2025-08-03 at 7.40.42 AM.jpeg" alt="Image for A">
+    <style>
+        .hidden-image {
+            display: none;
+            margin-top: 10px;
+            width: 300px;           /* Or any size you want */
+            border-radius: 10px;    /* Optional styling */
+            box-shadow: 0 0 15px white; /* Optional glow */
+        }
+
+    </style>
+
+    <script>
+    function showImage(imageId) {
+        // Hide all images
+        const images = document.querySelectorAll('.hidden-image');
+        images.forEach(img => img.style.display = 'none');
+
+        // Show selected image
+        const selectedImg = document.getElementById(imageId);
+        selectedImg.style.display = 'block';
+    }
+    </script>
+    </center>
